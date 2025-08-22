@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVARUGS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Custom styles for the shapes, since Tailwind can't easily create these specific shapes out of the box */
+        .shape-group {
+            position: relative;
+            width: 20rem;
+            height: 20rem;
+        }
+        .shape {
+            position: absolute;
+            background: linear-gradient(135deg, #a78bfa, #818cf8);
+            opacity: 0.6;
+            border-radius: 1.5rem;
+            filter: blur(20px);
+        }
+        .shape-1 {
+            width: 12rem;
+            height: 10rem;
+            top: 2rem;
+            left: 2rem;
+        }
+        .shape-2 {
+            width: 10rem;
+            height: 8rem;
+            bottom: 3rem;
+            left: 5rem;
+        }
+        .shape-3 {
+            width: 8rem;
+            height: 6rem;
+            top: 5rem;
+            right: 1rem;
+        }
+        .shape-4 {
+            width: 7rem;
+            height: 9rem;
+            bottom: 1rem;
+            right: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <div class="flex flex-col md:flex-row lg:flex-row md:space-x-8">
+
+            <div class="hidden lg:block w-full">
+                <header class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="h-8 w-8 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500"></div>
+                        <span class="text-2xl font-bold text-gray-800">EVARUGS</span>
+                    </div>
+                    <nav class="flex space-x-4 text-gray-600">
+                        <a href="#" class="hover:text-purple-600">О нас</a>
+                        <a href="#" class="hover:text-purple-600">Продукты</a>
+                        <a href="#" class="hover:text-purple-600">Контакты</a>
+                    </nav>
+                </header>
+
+                <div class="flex flex-row items-center py-16">
+                    <div class="w-1/2">
+                        <h1 class="text-5xl font-bold text-gray-900 leading-tight mb-4">
+                            Инновационные коврики для автомобиля
+                        </h1>
+                        <button class="bg-purple-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
+                            ЗАКАЗАТЬ
+                        </button>
+                    </div>
+                    <div class="w-1/2 flex justify-center">
+                        <div class="shape-group">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                            <div class="shape shape-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:block lg:hidden w-full">
+                <header class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="h-8 w-8 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500"></div>
+                        <span class="text-2xl font-bold text-gray-800">EVARUGS</span>
+                    </div>
+                </header>
+                <div class="flex flex-col items-center py-8 text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-4">
+                        Инновационные коврики для автомобиля
+                    </h1>
+                    <button class="bg-purple-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition duration-300 mb-8">
+                        ЗАКАЗАТЬ
+                    </button>
+                    <div class="shape-group">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block md:hidden w-full">
+                <header class="flex justify-center py-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="h-8 w-8 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500"></div>
+                        <span class="text-2xl font-bold text-gray-800">EVARUGS</span>
+                    </div>
+                </header>
+                <div class="flex flex-col items-center py-8 text-center">
+                    <h1 class="text-2xl font-bold text-gray-900 leading-tight mb-4">
+                        Инновационные коврики для автомобиля
+                    </h1>
+                    <button class="bg-purple-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition duration-300 mb-8">
+                        ЗАКАЗАТЬ
+                    </button>
+                    <div class="shape-group">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
